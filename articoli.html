@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Presto.it</title>
+    
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="1345871-03a9f4.png" type="image/x-icon">
+    <!-- CDN AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <!-- CDN FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CDN GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Black+Ops+One&family=Bungee&family=Bungee+Spice&family=Climate+Crisis&family=Condiment&family=DotGothic16&family=Fascinate&family=Faster+One&family=Honk&family=IM+Fell+English+SC&family=Indie+Flower&family=Kablammo&family=Kdam+Thmor+Pro&family=Lilita+One&family=Linden+Hill&family=Lugrasimo&family=Nabla&family=Nanum+Brush+Script&family=Nova+Square&family=Offside&family=Protest+Strike&family=Rampart+One&family=Rubik+Maps&family=Single+Day&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Suez+One&family=Titillium+Web:wght@200&family=Trade+Winds&display=swap" rel="stylesheet">
+    <!-- BS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./index.css/style.css">
+</head>
+<body class="darkMode">
+    <!-- NAVBAR -->
+    <div class="container-fluid container-navbar">
+        <nav class="navbar navbar-expand-lg bg-dar nav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="icona"><i class="fa-solid fa-house" style="color: #40e0d0; "></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-auto" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mylink1">
+                            <a class="nav-link mylink" id="list" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item mylink1">
+                            <a class="nav-link mylink" id="list"  href="./articoli.html">Articoli</a>
+                        </li>
+                        <li class="nav-item mylink1">
+                            <a class="nav-link mylink" id="list" href="#">Chi siamo</a>
+                        </li>
+                    </div>
+                    
+                    <div class="d-flex align-items-center justify-content-between">
+                    </div>
+                    <button class="nav-link" id="BtnDarkMode">
+                        <i class="fa-regular fa-moon my-icon" style="color: #63E6BE;"></i>
+                    </button>
+                </div>
+                
+                
+            </ul>
+        </nav>
+    </div>
+    <!-- FINE NAVBAR -->
+    
+    
+    
+    <!-- ANNUNCI -->
+    <div class="container-fluid my-5">
+        <div class="row">
+            <!-- colonna sinistra -->
+            <div class="col-12 col-md-2">
+                <!--filtri con accordion -->
+                <h3>Cerca per:</h3>
+                <div class="accordion" id="accordionFilters">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Categoria
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFilters">
+                            <div class="accordion-body" id="radioWrapper">
+                                <!-- radio buttons per la scelta delle categorie -->
+                                
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="categories" id="All" >
+                                    <label class=" form-check-label"  for="All">
+                                        Tutte le categorie
+                                    </label>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Prezzo
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFilters">
+                            <div class="accordion-body">
+                                
+                                <!-- <label for="customRange1" class="form-label">Example range</label> -->
+                                <input type="range"  class="mt-3" id="inputRange">
+                                <p id="numberPrice">0 €</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Parola
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFilters">
+                            <div class="accordion-body">
+                                
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="wordsFilterInput">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </span>
+                                    <input id="wordInput" type="text" class="form-control" placeholder="Cerca un prodotto" aria-label="Cerca un prodotto" aria-describedby="wordsFilterInput">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end my-3">
+                        <button class="btn-Reset px-3" id="btnReset">
+                            <i class="fa-solid fa-rotate icon-about" style="color: #40e0d0;"></i> Reset
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- colonna destra -->
+            <div class="col-12 col-md-10">
+                <!-- card con annunci -->
+                <h3>Annunci:</h3>
+                <!-- mantengo solo la row alla quale appenderemo le card degli annunci -->
+                <div class="row" id="cardsWrapper">
+                    <div class="col-12 col-md-3">
+                        <!-- annuncio -->
+                        <div class="card" >
+                            
+                            <div class="position-relative overflow-hidden">
+                                <a href="">
+                                    <img src="../img/property-1.jpg" class="card-img-top img-zoom" alt="...">
+                                </a>
+                                
+                                <div class="position-absolute bottom-0 start-0 bg-white rounded-top py-1 px-3 mx-3 text-category">
+                                    Categoria
+                                </div>
+                            </div>
+                            
+                            <div class="card-body">
+                                
+                                <p class="text-price">
+                                    € 300.99
+                                </p>
+                                <a href="#" class="text-decoration-none">
+                                    <h5 class="card-title">Titolo Annuncio</h5>
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="container-fluid m-pers bg-dark">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted bhov" id="btnFooter">&copy; Presto.it</p>
+            
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="presto.html" class="nav-link px-2 text-muted bhov" id="btnFooter">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted bhov" id="btnFooter">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted bhov" id="btnFooter">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted bhov" id="btnFooter">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted bhov" id="btnFooter">About</a></li>
+            </ul>
+        </footer>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- BS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    
+    <!-- ANNUNCI JS -->
+    <script src="./main.js/articoli.js"></script>
+    <!-- Inizializzazione AOS -->
+    <script>
+        AOS.init();
+    </script> 
+</body>
